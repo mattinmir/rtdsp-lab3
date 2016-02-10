@@ -106,28 +106,7 @@ void main(){
   sine_init();
   	 		
   /* loop indefinitely, waiting for interrupts */  					
-  while(1) 
- 	{
- 		// Calculate next sample
- 		//sample = sinegen();
- 		
-     	/* Send a sample to the audio port if it is ready to transmit.
-           Note: DSK6713_AIC23_write() returns false if the port if is not ready */
-
-      /*  //  send to LEFT channel (poll until ready)
-        while (!DSK6713_AIC23_write(H_Codec, ((Int32)(sample * L_Gain))))
-        {}; 
-        
-		// send same sample to RIGHT channel (poll until ready)
-        while (!DSK6713_AIC23_write(H_Codec, ((Int32)(sample * R_Gain))))
-        {};
-        */
-        
-        
-		// Set the sampling frequency. This function updates the frequency only if it 
-		// has changed. Frequency set must be one of the supported sampling freq.
-		//set_samp_freq(&sampling_freq, Config, &H_Codec);	
-	}
+  while(1) {}
   
 }
         
