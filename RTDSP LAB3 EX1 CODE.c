@@ -126,6 +126,6 @@ void init_HWI(void)
 
  void ISR_AIC(void)
 {
-	mono_write_16Bit(fabs(mono_read_16Bit()));
+	mono_write_16Bit(abs(mono_read_16Bit()));
 	
 }
